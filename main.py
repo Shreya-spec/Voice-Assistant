@@ -74,7 +74,7 @@ elif "play" and "video" in text2:
         r.adjust_for_ambient_noise(source, 1.2)
         print("listening....")
         video = r.listen(source)
-        videoname = r.recognize_google(audio)
+        videoname = r.recognize_google(video)
     speak("Playing {} in Youtube".format(videoname))
     print("Playing {} in Youtube".format(videoname))
     assist = music()
